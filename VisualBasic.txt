@@ -1,0 +1,32 @@
+Range("namedCellsName") [.Value, .Select]
+Sheets("someNameOfASheet") [.Select]
+MsgBox("Alert to display.")
+Selection [.Copy, .Paste]
+Application.ScreenUpdating = True/False # DISABLE FLICKERING ON SCREEN UPDATE
+Sheets("SHEETNAME").PrintPreview
+Application.DisplayFullscreen = True/False
+Application.DisplayFormulaBar = True/False
+ActiveWindow.DisplayHeadings = True/False
+ActiveWindow.DisplayWorkbookTabs = True/False
+
+https://www.extendoffice.com/documents/excel/4344-excel-hide-headings-all-sheets.html
+
+Protect Worksheet
+
+EXCEL
+=COUNTIFS
+=COUNTIF
+=SUMIF
+=AVERAGEIF
+
+
+
+VB
+
+Sheets("Analysis").Select
+ActiveSheet.PageSetup.PrintArea = ActiveSheet.Range("An:An")
+
+ActiveSheet.PageSetup.CenterHeader = "&B&16Age Demographics of Insured"
+'&B for bold
+'&16 for font size 16
+Sheets("Analysis").PrintPreview
